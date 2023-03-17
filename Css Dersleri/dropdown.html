@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          ul {
+            list-style-type: none;
+            background-color: rgb(103, 95, 95);
+            width:100%;
+        }
+        ul li:hover{
+            background-color: red;
+            transition: 0.5s;
+           
+            
+        }
+        ul li{
+           margin-right: 15px;
+            padding:15px;
+            margin-left: -30px;
+            display: inline-block;
+            width: 100px;
+         
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }i{padding-right:10px;
+         color: aqua;}
+         #mat{
+            display:none;
+            z-index: 1;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -25px;
+            width:100px;
+
+         }
+         .news:hover #mat{
+            display: block;
+         }
+         .fen{
+            position: absolute;
+            z-index: 1;
+            display:none;
+            margin-left: 115px;
+           margin-top: -33px;
+ 
+            width:100px;
+
+
+         }
+         #ari:hover .fen{
+            display: block;
+         }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li>  <a href=""> <i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="news"><a href=""> <i class="fa-solid fa-newspaper"></i>  News</a>
+        <div id="mat">
+            <ul>
+           <li style="display: block;">Det1</li>
+            <li id="ari" style="display: block;">Det2
+             <div class="fen">
+                <ul>
+                    <li >Aa</li>
+                <li >be</li>
+                <li>ce</li>
+                <li >de</li></ul></div>
+            </li>
+            <li style="display: block;">Det3</li>
+            <li style="display: block;">Det4</li></ul>
+        </div>
+        
+        </li>
+        <li><a href=""> <i class="fa-solid fa-address-card"></i> Contact</a></li>
+        <li><a href=""> <i class="fa-solid fa-address-card"></i> About</a></li>
+    </ul>
+    
+</body>
+</html>
